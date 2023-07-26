@@ -12,6 +12,10 @@ container.appendChild(gameContainer);
 for (let i = 0; i < 16; i++) {
   for (let i = 0; i < 16; i++) {
     const pixel = document.createElement("div");
+    pixel.addEventListener("mouseenter", (e) => {
+      console.log(e.target);
+      e.target.style.backgroundColor = "pink";
+    });
     gameContainer.appendChild(pixel);
   }
 }
