@@ -24,7 +24,7 @@ function createGrid() {
       //make color change on hover on the div squares
       pixel.addEventListener("mouseenter", (e) => {
         console.log(e.target);
-        e.target.style.backgroundColor = "pink";
+        e.target.style.backgroundColor = "darkSlateGray";
       });
       gameContainer.appendChild(pixel);
     }
